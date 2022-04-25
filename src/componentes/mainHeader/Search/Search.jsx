@@ -27,13 +27,9 @@ const SearchInput = () => {
       ]);
     }
 
-    document.querySelector(".main-header").classList.add("slide-top");
-
-    setTimeout(() => {
-      document
-        .querySelector(".main-header")
-        .style.setProperty("max-height", "30vh");
-    }, 1000);
+    document
+      .querySelector(".main-header")
+      .style.setProperty("max-height", "30vh");
   };
 
   const handleChange = async (event) => {

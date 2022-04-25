@@ -4,7 +4,7 @@ import Search from "./Search/Search";
 
 const MainHeader = () => {
   return (
-    <header className="main-header">
+    <header className="main-header slide-top">
       <div className="container text-center">
         <h1 className="main-header__logo-text">Desafio Calindra</h1>
         {/* <div class="main-header__logo-circle">

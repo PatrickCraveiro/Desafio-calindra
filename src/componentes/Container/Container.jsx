@@ -9,7 +9,7 @@ const MainContainer = () => {
   return (
     <div className="main-container">
       {product.map((post) => (
-        <ul>
+        <ul className="scale-in-center">
           <li>
             <h3>{post["name"]}</h3>
             <div className="product-information">
