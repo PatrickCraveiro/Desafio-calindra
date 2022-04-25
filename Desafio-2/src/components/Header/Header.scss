@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  background-color: #fff;
+  height: 110px;
+  .header__nav {
+    &__logo {
+      display: flex;
+      width: fit-content;
+    }
+    &__text {
+      padding-left: 1.5vw;
+      width: max-content;
+      h1 {
+        font-family: Roboto Condensed;
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 48px;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        color: #846219;
+      }
+      p {
+        font-family: Roboto Condensed;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 19px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 5.4px;
+        color: #846219;
+      }
+    }
+  }
+}
