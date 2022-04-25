@@ -13,7 +13,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <footer>
+      <footer className="footer">
         <nav className="footer__nav">
           <div className="footer__nav__rede-social">
             <h1>Follow Us</h1>
