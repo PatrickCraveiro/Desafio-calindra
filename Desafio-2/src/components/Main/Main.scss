@@ -24,6 +24,29 @@
   height: 1024px;
   background-color: #506fa9;
   color: #fff;
+  display: flex;
+  align-items: center;
+  &__info {
+    h1 {
+      font-weight: bold;
+      font-size: 69.2px;
+      line-height: 81px;
+      color: #ffffff;
+      padding-bottom: 26px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 48.2px;
+      line-height: 56px;
+      color: #ffffff;
+    }
+  }
+  &__container-image {
+    max-width: 682px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {

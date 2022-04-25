@@ -2,7 +2,13 @@ header {
   width: 100%;
   background-color: #fff;
   height: 110px;
+  display: flex;
+  justify-content: center;
   .header__nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 90%;
     &__logo {
       display: flex;
       width: fit-content;
@@ -30,6 +36,51 @@ header {
         align-items: flex-end;
         letter-spacing: 5.4px;
         color: #846219;
+      }
+    }
+    &__btn {
+      flex-grow: 1;
+      flex-basis: auto;
+      display: flex;
+      ul {
+        display: flex;
+        margin-left: auto !important;
+        li {
+          font-weight: 300;
+          font-size: 100%;
+          line-height: 19px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end;
+          letter-spacing: 5.4px;
+          text-transform: uppercase;
+          color: #846219;
+          &:not(:last-child) {
+            margin-right: 3vw;
+          }
+          &:last-child {
+            margin-right: 1.5vw;
+          }
+          a {
+            font-weight: 300;
+            font-size: 100%;
+            line-height: 19px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            letter-spacing: 5.4px;
+            text-transform: uppercase;
+            color: #846219;
+            font-family: "RobotoCondensed";
+            text-decoration: none;
+          }
+        }
       }
     }
   }

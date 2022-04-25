@@ -21,6 +21,19 @@ class Header extends React.Component {
               <p className="header__nav__text__p">Measure Tapes</p>
             </div>
           </div>
+          <div className="header__nav__btn">
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Models</a>
+              </li>
+              <li>
+                <a href="#">Guarantee</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
     );
