@@ -15,8 +15,8 @@ class Header extends React.Component {
     return (
       <footer className="footer">
         <nav className="footer__nav">
+          <h1>Follow Us</h1>
           <div className="footer__nav__rede-social">
-            <h1>Follow Us</h1>
             <div className="footer__nav__rede-social__logo">
               <a href="#">
                 <img src={`${this.iconFacebook}`} alt="facebook" />
@@ -34,12 +34,14 @@ class Header extends React.Component {
             </div>
           </div>
         </nav>
-        <div className="footer__contact">
+        <nav className="footer__nav">
           <h1>Contact</h1>
-          <p>2490 Leisure Lane</p>
-          <p>San Luis Obispo</p>
-          <p>California</p>
-        </div>
+          <div className="footer__contact">
+            <p>2490 Leisure Lane</p>
+            <p>San Luis Obispo</p>
+            <p>California</p>
+          </div>
+        </nav>
       </footer>
     );
   }

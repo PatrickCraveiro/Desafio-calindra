@@ -13,7 +13,7 @@ class Header extends React.Component {
       <header>
         <nav className="header__nav">
           <div className="header__nav__logo">
-            <div className="header__nav__logo">
+            <div className="header__nav__logo__container-image">
               <img src={`${this.iconLogo}`} alt="" srcset="" />
             </div>
             <div className="header__nav__text">
@@ -24,13 +24,19 @@ class Header extends React.Component {
           <div className="header__nav__btn">
             <ul>
               <li>
-                <a href="#">About</a>
+                <a className="header__nav__btn__text" href="#">
+                  About
+                </a>
               </li>
               <li>
-                <a href="#">Models</a>
+                <a className="header__nav__btn__text" href="#">
+                  Models
+                </a>
               </li>
               <li>
-                <a href="#">Guarantee</a>
+                <a className="header__nav__btn__text" href="#">
+                  Guarantee
+                </a>
               </li>
             </ul>
           </div>
