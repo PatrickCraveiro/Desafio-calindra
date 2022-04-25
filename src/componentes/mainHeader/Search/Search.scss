@@ -1,0 +1,52 @@
+.search {
+  padding: 10px 0;
+  padding-right: 15px;
+  border: 3px solid #e35865;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  &__input {
+    width: 98%;
+  }
+  &__btn {
+    position: absolute;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    color: #e35865;
+  }
+}
+
+input {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  font-size: 20px;
+  color: #bbb;
+  background: none;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  font-family: "Arvo", sans-serif;
+  padding: 0;
+  line-height: 25px;
+}
+
+.main-header__logo-circle {
+  border: 1rem solid #8dc645;
+  width: 300px;
+  height: 300px;
+  border-radius: 51%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 10rem !important;
+  background: black;
+  font-family: cursive;
+}

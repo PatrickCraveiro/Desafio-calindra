@@ -1,0 +1,34 @@
+.product-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__review {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    &__star {
+      background: gainsboro;
+      -webkit-box-shadow: 5px 5px 5px 0px #000000,
+        inset 4px 4px 15px 0px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+      box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+        5px 5px 10px 5px rgba(0, 0, 0, 0);
+      height: 30px;
+      width: 30px;
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      &.active {
+        background-color: goldenrod;
+      }
+    }
+  }
+}
