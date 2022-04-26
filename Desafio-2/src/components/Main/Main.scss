@@ -27,14 +27,13 @@
   display: flex;
   align-items: center;
   position: relative;
-  justify-content: flex-end;
   flex-wrap: wrap;
   &__info {
-    top: 30%;
+    position: relative;
+    left: 9vw;
     height: fit-content;
     width: fit-content;
-    align-self: center;
-    margin: 0 auto;
+
     h1 {
       font-family: "Roboto Condensed", sans-serif;
       font-weight: 700;
@@ -52,7 +51,10 @@
     }
   }
   &__container-image {
-    position: relative;
+    position: absolute;
+    align-self: flex-start;
+    top: 12vh;
+    right: 0;
     height: fit-content;
     img {
       width: 100%;
@@ -61,39 +63,69 @@
   }
 }
 
-@media only screen and (max-width: 667px) {
-  .main__section-1 {
-    max-height: 611px;
-  }
-  .header__nav__btn__text {
-    font-size: 12.2px;
-  }
-  .main__section-2 {
-    img {
-      width: 259px;
-    }
-    h1 {
-      font-size: 41.2px;
-      line-height: 48.28px;
-    }
-    p {
-      font-size: 26.2px;
-      line-height: 30.7px;
-    }
-    height: 568px;
-  }
-}
-
 @media only screen and (max-width: 1111px) {
   .main__section-1 {
     max-height: 720px;
+  }
+  .main__section-2 {
+    &__info {
+      margin: 0 auto;
+      align-self: center;
+      position: unset;
+    }
+    .main__section-2__container-image {
+      position: relative;
+      top: unset;
+      right: unset;
+      height: unset;
+      margin-left: 50%;
+      img {
+        width: 390px;
+      }
+    }
+    h1 {
+      font-size: 53px;
+      line-height: 30.28px;
+    }
+    p {
+      font-size: 35px;
+      line-height: 30.7px;
+    }
+    justify-content: flex-end;
+    height: 568px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .main__section-1 h1 {
-    font-size: 3.4rem;
-    line-height: 4rem;
-    padding-bottom: 2vh;
+    font-size: 53.2px;
+    line-height: 62px;
+  }
+  .main__section-2 {
+    &__info {
+      margin: 0 auto;
+      align-self: center;
+      position: unset;
+    }
+    .main__section-2__container-image {
+      position: relative;
+      top: unset;
+      right: unset;
+      height: unset;
+      margin-left: 50%;
+      img {
+        width: 259px;
+      }
+    }
+    h1 {
+      font-size: 41.2px;
+      line-height: 30.28px;
+    }
+    p {
+      font-size: 26.2px;
+      line-height: 30.7px;
+    }
+    justify-content: flex-end;
+    height: 568px;
   }
 }
